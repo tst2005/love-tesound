@@ -5,7 +5,7 @@
 --It's under the ZLIB license.
 
 -- Sound system created by Ensayia and expanded by Taehl
-TEsound = {}				-- Namespace
+local TEsound = {}		-- Namespace
 TEsound.channels = {}		-- This holds the currently playing sound channels
 TEsound.volumeLevels = {}	-- Volume levels that multiply the volumes of sounds with those tags
 TEsound.pitchLevels = {}	-- Pitch levels that multiply the pitches of sounds with those tags
@@ -203,3 +203,5 @@ function TEsound.findPitch(tag)
 	end
 	return 1	-- if nothing is found, default to 1
 end
+
+return TEsound
